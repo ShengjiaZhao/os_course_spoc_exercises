@@ -1,0 +1,27 @@
+Virtual Address 6653(001 10010 10011)
+  --> pde_index:0x1(00001)   pde contents:(0xb5, 10110101, valid 1, pfn 0x35)
+    --> pte_index:0x12(10010)   pte contents:(0xf8, 11111000, valid 1, pfn 0x78)
+      --> To Physical Address 0xf13(0111100010011)   --> Value: 0x1d
+
+Virtual Address 1c13(111 00000 10011)
+  --> pde_index:0x7(00111)   pde contents:(0xbd, 10111101, valid 1, pfn 0x3d)
+    --> pte_index:0x0(00000)   pte contents:(0xf6, 11110110, valid 1, pfn 0x76)
+      --> To Physical Address 0xed3(0111011010011)   --> Value: 0x12
+
+Virtual Address 6890(010 00100 10000)
+  --> pde_index:0x2(00010)   pde contents:(0xa1, 10100001, valid 1, pfn 0x21)
+    --> pte_index:0x4(00100)   pte contents:(0x7f, 01111111, valid 0, pfn 0x7f)
+      --> Memory location do not exist
+      --> To Disk Sector Address 0xff0(0111111110000)   --> Value: 0x6
+
+Virtual Address 0af6(010 10111 10110)
+  --> pde_index:0x2(00010)   pde contents:(0xa1, 10100001, valid 1, pfn 0x21)
+    --> pte_index:0x17(10111)   pte contents:(0x7f, 01111111, valid 0, pfn 0x7f)
+      --> Memory location do not exist
+      --> To Disk Sector Address 0xff6(0111111110110)   --> Value: 0x3
+
+Virtual Address 1e6f(111 10011 01111)
+  --> pde_index:0x7(00111)   pde contents:(0xbd, 10111101, valid 1, pfn 0x3d)
+    --> pte_index:0x13(10011)   pte contents:(0x16, 00010110, valid 0, pfn 0x16)
+      --> To Disk Sector Address 0x2cf(0001011001111)   --> Value: 0x1c
+
