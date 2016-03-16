@@ -72,7 +72,8 @@ class AddressResolver:
         print("  pte contents:(" + hex(pte_value) + ", " + bin(pte_value)[2:].zfill(8) + ", valid " +
               str(pte_valid) + ", pfn " + hex(pte_entry) + ")")
         if pte_valid == 0 and pte_entry == 127:
-            print("      --> Memory location do not exist")
+            print("      --> Fault")
+            return
         phy_addr = pte_entry * 32 + int(offset, 2)
         if pte_valid == 1:
             print("      --> To Physical Address " + hex(phy_addr) + "(" + bin(phy_addr)[2:].zfill(13) + ")"),
